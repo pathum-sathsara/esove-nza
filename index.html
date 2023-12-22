@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dream house</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" re    l="stylesheet"> -->
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        --font1: 'Roboto', sans-serif;
+        --font2: 'Roboto', sans-serif;
+    }
+    
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    body {
+        background: #dddbd9;
+    }
+    
+    #logo {
+        width: 280px;
+    }
+    
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+        margin: 10px 0
+    }
+    
+    h2 {
+        font-family: var(--font2);
+        font-size: 33px;
+        text-transform: uppercase;
+        padding: 20px 0;
+        letter-spacing: 1px;
+        color: #222;
+    }
+    
+    #header1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #mainmenu>a {
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        color: #222;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    
+    #mainmenu>span {
+        padding: 0 10px;
+        font-family: "roboto,sans-serif"
+    }
+    
+    #mainmenu a>:hover,
+    .active {
+        border-bottom: 2px solid orange;
+    }
+    
+    #mainsection {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #mainleft {
+        width: 52%;
+        height: 640px;
+        overflow:hidden ;
+        
+    }
+    #slides{
+        width: 500%;
+        position: relative;
+        animation: slideshow 5s infinite;
+        display: flex;
+   }
+ #slides > img { width: 20%
+
+ }
+ @keyframes slideshow {
+    0% , 8.34% { left: 0; }
+    16.68%, 33.36% { left: -100%;}
+     41.7%,  58.38% { left: -200%;}   
+     66.72%, 83.4% { left: -300%;}
+     91.74%, 100% { left:  -400%;}
+    }
+    
+    #mainright {
+        background-color: white;
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #welcome {
+        padding: 60px;
+    }
+    
+    #imgset1 {
+        display: flex;
+    }
+    /* #cards */
+    
+    #cards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .card {
+        background: white;
+        padding: 30px 20px 20px;
+        width: 27%;
+        text-align: center;
+    }
+    
+    .cards>p {
+        color: gray;
+        font-style: italic;
+    }
+    
+    #cards>h2 {
+        text-transform: uppercase;
+    }
+    
+    #fourcards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #fourcards>div {
+        width: 50%;
+        height: 280px;
+        padding: 50px 20px;
+        box-sizing: border-box;
+    }
+    
+    #image1 {
+        background-image: url("images/chair-with-pillow.webp");
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 250px;
+        background-size: cover;
+        background-position-y: -75px;
+    }
+    
+    #image2 {
+        background-image: url("images/room.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 250px;
+    }
+    
+    #ideas {
+        background: white;
+    }
+    
+    #plans {
+        background: #332e29;
+    }
+    
+    #plans>p,
+    #plans>h2 {
+        color: white;
+    }
+    
+    #newideas {
+        background: white;
+        padding: 80px 0;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    #para1 {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    /* interior desing ideas */
+    
+    #interiorr {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    
+    #container {
+        display: flex;
+    }
+    
+    .whitebg {
+        background: white;
+        padding: 30px 20px;
+    }
+    
+    .smallcards {
+        width: 50%;
+        box-sizing: border-box;
+    }
+    
+    #containerright {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    
+    #containerleft {
+        width: 50%;
+        background: url("images/traditional-house.webp") no-repeat;
+        background-size: cover;
+    }
+    /* home and apartment */
+    
+    #apartment {
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom:40px;
+    }
+    /* awesome interior */
+    
+    #awesome {
+        background: #ccc0bc;
+        padding: 40px 0;
+    }
+    #awesome{
+            background: #ccc0b0;
+            padding: 40px 0;
+        }
+        #container2{
+            display: flex;
+            justify-content: space-between;
+        }
+        #container2 > div{
+            background: white;
+            padding: 30px;
+            width: 550px;
+            box-sizing: border-box; /* Padding Values add to that element's width */
+        }
+        .numbers{
+            display: block; 
+            margin-bottom: 15px;
+            font-size: 35px;
+        }
+        .title{
+            font-size: 25px;
+            letter-spacing: 0;
+        }
+
+        /* Contact Us */
+
+        #contactS{
+            padding: 40px 0;
+            background: #332e29;
+        }
+        #contactForm{
+            width: 550px;
+            padding: 70px 30px 30px;
+            border: 2px solid gray;
+            box-sizing: border-box;
+        }
+        #contactForm > h1, #contactForm > p{
+            color: white;
+        }
+        #contactForm > span{
+            color: #52cbaa;
+            font-family: var(--font1);
+        }
+        .formItem{
+            border: 2px solid #666;
+            padding: 15px;
+            background: transparent;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 20px 0;
+            font-family: var(--font1);
+            color: white;
+            font-size: 16px;
+        }
+        #contactForm > button{
+            padding: 20px;
+            border: 2px solid #666;
+            text-transform: uppercase;
+            background: transparent;
+            font-family: var(--font1);
+            color: white;
+            font-size: 18px;
+        }
+        #container3{
+            display: flex;
+            justify-content: space-around;
+        }
+        #map{
+            width: 550px;
+            height: auto;
+            border: none;
+            background: #424242;
+        }
+        
+        /* Footer */
+
+        footer{
+            background: #332e29;
+        }
+        #footerMenu{
+            display: flex;
+            justify-content: space-between;
+        }
+        .footerLinks{
+            font-family: var(--font1);
+            color: white;
+            list-style: none;
+        }
+        .link{
+            color: #ccc;
+        }
+        .footerLinks > li{
+            padding: 10px 0;
+        }
+        .footerHeading{
+            font-family: var(--font1);
+            color: #ccc;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+        }
+        #copyright{
+            background: #333;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        #para3{
+           text-align: center;
+           color: #ccc; 
+        }
+    @media screen and (max-width: 1240px) {
+        .wrapper {
+            width: 96%; 
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        #imgset1>img{
+            width:33.3%;
+        }  
+         /* fourCards */
+        #fourCards > div{
+            height:auto;
+        }
+        #image1{
+            background-position-y: 0;
+        }
+    }
+
+        /* #para1{
+                padding-left: 20px;
+                padding-right: 20px;
+            } */    
+
+        /* <!-- homeand apartment --> */
+        #imgSet2 >img{
+            width: 48%;
+        }
+        #para2{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        /* awesome interiors */
+        #container2 > div{
+                width:48%;
+        }
+
+        /* contact */
+        #contactForm, #map{
+                width:48%;
+        }
+
+        @media screen and (max-width:1080px) {
+            #welcome > h1{
+                font-size: 35px;
+            }
+            h1{ font-size: 45px;}
+
+            #imgSet1 > img{
+                width:100px;
+                margin:10px;
+            }
+            #imgSet1 {
+                justify-content: center;
+            }
+            #mainRight{
+                display: block;
+            }
+            #welcome{
+                padding:30px 20px 20px 30px;
+            }
+            /* interior design ideas */
+            .whiteBg{
+                width:100%;
+            }
+            /* sllideshow */
+            #mainleft{
+                height: 450px;
+            }
+        }
+         @media screen and 
+            (max-width: 780px) {
+                #mainsection{
+                    flex-direction:column
+    
+        }
+         #cards{ flex-direction: column;
+
+         }
+       .cards{
+            width:100% ;
+            box-sizing:border-box ;
+            margin: 10px 0;
+       }  
+     }
+    @media screen and ( max-width: 650px){
+                #fourcards{
+                    flex-direction: column;
+            }
+            #fourcards> div{ width: 100%;
+         } 
+            #image1, #image2{
+                height: 250px !important;
+            }
+            #image1{
+                background-position-y:center ;
+            }
+            #image1{
+                background-position-y: center;
+            }
+            /* <!-- interier design ideas  --> */
+            #container{
+                flex-direction: column;
+                }
+            #container> div{
+                width: 1000%;
+            }  
+            #containerleft{
+                height: 250px;
+            }
+            @media screen and ( max-width: 550px){
+                #container2{
+                    flex-direction: column;
+                }
+            }
+            #container2>div{
+                width:100% ;
+                margin: 10px 0;
+            }
+            
+            /* contact */
+            #container3{
+                flex-direction:column ;
+            }
+
+            /* footer */
+            #footermenu{
+                flex-direction: column;
+            }
+            .footerHeading{
+                text-align: center;
+                margin-top: 20px;
+            }
+            .footerLinks{
+                text-align: center;           
+            }
+            } 
+    @media screen and ( max-width: 400px)   {
+                .wrapper{
+                    width: 320px};
+                }
+                /* slideshow */
+                #mainleft{
+                    height: 350px;
+                }
+            
+        @media screen and (max-width:320px) {
+            .wrapper{
+                width:320px;
+            }
+        }        
+
+
+            </style>
+    <body>
+     <!-- main header -->
+     <section class="wrapper" id="mainsection">
+     <div id="mainleft">
+        <figure id="slides">
+            <img src="slides/living-area.jpg" alt="living-area">
+            <img src="slides/office-room.jpg" alt="office-room">
+            <img src="slides/seat-with-pillows.jpg" alt="seat-with-pillows">
+            <img src="slides/table-with-chair.jpg" alt="table-with-chair">
+            <img src="slides/living-area.jpg" alt="living-area">
+        </figure>
+
+     </div>
+     <div id="mainright">
+        <div id="welcome">
+            <h1>thai style home whabi sabi</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error et voluptatem accusantium, modi placeat nesciunt!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sit reiciendis saepe magni sequi amet.</p>
+        </div>
+     </div>
+     <figure id="imgset1">
+        <img src="images/" alt="">
+
+     </figure>
+
+</section>
+    <header class="wrapper" id="header1">
+        <img src="images/dreamhouse-logo.svg" alt="Logo" id="logo">
+
+        <nav id="mainmenu">
+            <a href="#" class="active"><img src="images/home-icon.svg" alt="Home"></a><span>|</span>
+            <a href="#">Designs</a><span>|</span>
+            <a href="#">About Us</a><span>|</span>
+            <a href="#">Contact Us</a>
+        </nav>
+
+         <img src="images/menu.svg" alt="Menu" id="menuIcon">
+    </header>   
+    <section class="wrapper" id="mainsection">
+        <img src="images/living-room.webp" alt="living room" id="mainleft"> 
+
+        <div id="mainright">
+            <div id="welcome">
+                <h1>Thai style home whabi sabi</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In exercitationem ducimus aliquid, velit omnis quibusdam rerum facilis ipsum debitis perspiciatis quae dolorem repellat nihil cupiditate error mollitia esse, dicta harum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, maxime. Aspernatur placeat asperiores tempora assumenda.</p>
+            </div> 
+            <figure id="imgset1">
+                <img src="images/pillows.webp" alt="pillows">
+                <img src="images/sea.webp" alt="sea">
+                <img src="images/chair.webp" alt="chair">
+            </figure>
+        </div>
+    </section>
+    <section class="wrapper" id="cards">
+        <div class="card">
+            <img src="images/rocket.svg" alt="network">
+            <h2>team</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, minus!</p>
+        </div>
+        <div class="card">
+            <img src="images/medal.svg" alt="network">
+            <h2>team</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, minus!</p>
+        </div>
+        <div class="card">
+            <img src="images/network.svg" alt="network">
+            <h2>team</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, minus!</p>
+        </div>
+    </section>  
+
+    </section>
+
+    </section>
+
+
+   
+ <script>
+    var button = document.getElementById("menuIcon");
+    button.onclick=function(){
+    console.log("clicked")
+}
+ </script>
+      
+</body>
+
+</html>
